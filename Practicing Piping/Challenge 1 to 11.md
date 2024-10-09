@@ -7,6 +7,7 @@ flag:
 pwn.college{46cI0BsV96cspFynuaVEycoBnBW.dRjN1QDLxMTO0czW}
 hacker@piping~redirecting-output:~$
 ```
+To get PWN as output, used echo command, and to redirect PWN to COLLEGE file used >
 
 # Redirecting more output
 ```bash
@@ -32,6 +33,7 @@ hacker@piping~redirecting-more-output:~$ cat myflag
 
 hacker@piping~redirecting-more-output:~$
 ```
+Followed the same procedure as first challenge, and after redirecting the output to the file, used cat commmand to read the contents.
 
 # Appending Output
 
@@ -74,6 +76,7 @@ overwrote the initial write of the first half directly to the file. Try append
 mode!
 hacker@piping~appending-output:~$
 ```
+Use >> instead of > to append the output.
 
 # Redirecting Errors
 ```bash
@@ -86,6 +89,7 @@ hacker@piping~redirecting-errors:~$ cat myflag
 
 hacker@piping~redirecting-errors:~$
 ```
+The challenge asked to use > and 2> together.
 
 # Redirecting Input
 ```bash
@@ -99,6 +103,7 @@ Here is your flag:
 pwn.college{wLcxtWCTt63_td0Z3NRt26y13fp.dBzN1QDLxMTO0czW}
 hacker@piping~redirecting-input:~$
 ```
+Redirected the output college to file PWN using > and then redirected the input of PWN to /challenge/run using <.
 
 # Grepping Stored Results
 ```bash
@@ -125,6 +130,7 @@ hacker@piping~grepping-stored-results:~$ grep pwn.college{ /tmp/data.txt
 pwn.college{Ik2LNicRju4g4OzHoPt6b1FGIHD.dhTM4QDLxMTO0czW}
 hacker@piping~grepping-stored-results:~$
 ```
+First store the outputby redirecting it to /tmp/data.txt,, Then as we know every flag begins with pwn.college, so I found it using grep,, and at the end we needed to find it in in the output which was already stored in the file.
 
 # Grepping Live Output
 ```bash
@@ -199,6 +205,8 @@ Great job! Here is your flag:
 pwn.college{4dRpiHkcmxP9Lpyl1yS_RSZdpJJ.dFjM5QDLxMTO0czW}
 hacker@piping~duplicating-piped-data-with-tee:~$
 ```
+
+Used tee pwn to store the output in pwn file, then used cat command to retrieve the secret code and at last used the secret code and piped it to /challenge/college to get the flag.
 
 # Writing to multiple programs
 ```bash
