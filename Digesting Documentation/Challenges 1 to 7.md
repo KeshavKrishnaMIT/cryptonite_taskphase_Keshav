@@ -4,6 +4,7 @@ hacker@man~learning-from-documentation:~$ /challenge/challenge --giveflag
 Correct argument! Here is the /flag file:
 pwn.college{k9TI9IS6ZvpZ4GOhrBicj7t9OL5.dZDN1QDLxMTO0czW}
 ```
+Just invoked the command, simmple.
 
 # Challenge 2: Learning Complex Usage
 ```bash
@@ -11,6 +12,7 @@ hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
 Correct argument! Here is the /flag file:
 pwn.college{sT0Ps51UpSE-34If_EEgHWuEUdm.dVjM5QDLxMTO0czW}
 ```
+
 
 # Challenge 5: Searching For Manuals
 ```bash
@@ -54,6 +56,7 @@ Incorrect usage! Please read the challenge man page!
 hacker@man~searching-for-manuals:~$ /challenge/challenge --nzyjkc 047
 Correct usage! Your flag: pwn.college{0B4VSnzGGMyM7jGkM7LFcQPZjtq.dZTM4QDLxMTO0czW}
 ```
+Read the challenge description properly and used -k as the argument to get the flag.
 
 # Challenge 3: Reading Manuals
 ```bash
@@ -96,6 +99,7 @@ hacker@man~reading-manuals:~$ /challenge/challenge --oqxeys 650
 Correct usage! Your flag: pwn.college{Yo6A5qTxe0Jy1sY3NxylKtnC8cr.dRTM4QDLxMTO0czW}
 hacker@man~reading-manuals:~$
 ```
+Simply followed the description given, flag will be printed only on entering specific data.
 
 # Challenge 6: Helpful Programs
 ```bash
@@ -117,6 +121,7 @@ hacker@man~helpful-programs:~$ /challenge/challenge -g 140
 Correct usage! Your flag: pwn.college{Q-DnHSC1brQSjWgLPDkeDcAiYwf.ddjM4QDLxMTO0czW}
 hacker@man~helpful-programs:~$
 ```
+After entering the first command /challenge/challenge --help , read and noticed that -p will print the value that will cause the -g option to give you the flag.
 
 # Challenge 7: Help for Builtins
 ```bash
@@ -136,6 +141,7 @@ hacker@man~help-for-builtins:~$ challenge --secret "068EFzGA"
 Correct! Here is your flag!
 pwn.college{068EFzGA2jgI05UBp4Sbvgamyzt.dRTM5QDLxMTO0czW}
 ```
+
 
 
 
